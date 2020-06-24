@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+gitlab-hammer = {editable = true, path = "."}
+git-hammer = "*"
+requests = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+gitlabhammer = "python -m gitlabhammer"
+githammer = "python -m githammer"
